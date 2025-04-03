@@ -1,9 +1,13 @@
 body {
   margin: 0;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 100%;
   background-color: rgb(13, 18, 28);
   color: white;
   font-size: 18px;
+  overflow-x: hidden;
 }
 body svg {
   height: 20px;
@@ -12,6 +16,9 @@ body svg {
 body a {
   text-decoration: none;
   color: white;
+}
+body h2, body p {
+  margin: 0;
 }
 body header {
   display: flex;
@@ -76,4 +83,59 @@ body header .header-bottom .header-bottom-right .input-bar .kyb-shortcut {
   background-color: rgba(162, 171, 189, 0.3);
   padding: 5px;
   border-radius: 10px;
+}
+body main {
+  max-width: 100%;
+}
+body main .main-wrapper {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 200px;
+}
+body main .main-wrapper .main-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 100px;
+}
+body main .main-wrapper .main-left .download-btn {
+  background: transparent;
+  border: 1px solid rgb(82, 183, 97);
+  color: white;
+  transition: ease-in 0.2s;
+}
+body main .main-wrapper .main-left .download-btn:hover {
+  background-color: rgb(82, 183, 97);
+}
+body main .main-wrapper .main-right {
+  display: flex;
+  justify-content: center;
+}
+body main .main-wrapper .main-right .image {
+  width: 75%;
+}
+body footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid white;
+  margin-top: auto;
+}
+body footer .footer-btn {
+  padding: 5px;
+  background: transparent;
+  color: white;
+  border: none;
+  transition: ease-in 0.2s;
+}
+body footer .footer-btn:hover {
+  background-color: rgba(255, 221, 221, 0.2);
+}
+body footer .footer-left, body footer .footer-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
