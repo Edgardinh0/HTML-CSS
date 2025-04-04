@@ -4,7 +4,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   max-width: 100%;
-  background-color: rgb(13, 18, 28);
+  background: linear-gradient(0.25turn, rgb(13, 18, 28), rgb(0, 41, 0), rgb(13, 18, 28));
   color: white;
   font-size: 18px;
   overflow-x: hidden;
@@ -99,12 +99,17 @@ body main .main-wrapper .main-left {
   flex-direction: column;
   gap: 30px;
   padding: 50px 100px;
+  max-width: 500px;
 }
 body main .main-wrapper .main-left .download-btn {
   background: transparent;
   border: 1px solid rgb(82, 183, 97);
   color: white;
   transition: ease-in 0.2s;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  max-width: 400px;
 }
 body main .main-wrapper .main-left .download-btn:hover {
   background-color: rgb(82, 183, 97);
